@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="layout.css" />
+</head>
+<body>
+    <main>
+        <form class="form" id="survey-form" action="success.html" method="POST">
+            <div class="form-title">Returning to the Office Survey</div>
+            <p class="form-description">The Company's policy of returning to the office will be in effect later this year.  Please select the number of days that you would be willing to work from the office and the corresponding day(s) of the week.</p>
+            <div class="form-item">
+                <label for="name" class="form-label">Employee Name</label>
+                <input type="text" class="form-input" id="name" name="name" placeholder="Enter Full Name" required>
+                <span class="form-error">Please enter a name</span>
+            </div>
+            <div class="form-item">
+                <label for="email" class="form-label">Work Email</label>
+                <input type="email" class="form-input" id="email" name="email" placeholder="email@company.com" required>
+                <span class="form-error">Please enter a valid email</span>
+            </div>
+            <div class="form-item">
+                <label for="numdays" class="form-label">Number of Days In The Office</label>
+                <input type="number" class="form-input form-input-small" id="numdays" name="numdays" placeholder="# day(s)? (Max 5)" min="1" max="5" required>
+                <span class="form-error">Please enter a number between 1 and 5</span>
+            </div>
+            <label for="weekday" class="form-label">Select Which Work Days</label>
+            <div class="form-item-checkbox">
+                <input type="checkbox" class="" id="monday" name="dayselect" value="monday">
+                <label for="monday" class="checkbox">Mon</label>
+                <input type="checkbox" class="" id="tuesday" name="dayselect" value="tuesday">
+                <label for="tuesday" class="checkbox">Tue</label>
+                <input type="checkbox" class="" id="wednesday" name="dayselect" value="wednesday">
+                <label for="wednesday" class="checkbox">Wed</label>
+                <input type="checkbox" class="" id="thursday" name="dayselect" value="thursday">
+                <label for="thursday" class="checkbox">Thur</label>
+                <input type="checkbox" class="" id="friday" name="dayselect" value="friday">
+                <label for="friday" class="checkbox">Fri</label>
+                <span class="form-error">Please enter a number between 1 and 5</span>
+            </div>
+            <div class="form-item">
+                <label for="usercomment" class="form-label">Additional comments</label>
+                <textarea maxlength="500" class="form-input" name="usercomment" id="usercomment" placeholder="Please comment on any additional accommodations that you might need prior to returning to the office."></textarea>
+                <span class="form-error">Please keep your comment under 500 characters</span>
+            </div>
+            <div class="form-item">
+                <button class="form-button" type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
