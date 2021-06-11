@@ -57,11 +57,16 @@ h1 {
 .form-item-checkbox {
     display: flex;
     flex-direction: row;
+    margin-top: 15px;
 }
 
 .form-item-checkbox > * {
     align-self: flex-start;
-    padding: 0 5px;
+    padding: 0 10px;
+}
+
+input[type=checkbox] {
+    transform: scale(1.2);
 }
 
 .form-label {
@@ -156,10 +161,35 @@ textarea.form-input {
     .form-description {
         display: none
     }
+    .form-input {
+        font-size: 1.5rem;
+    }
     .form-title {
         font-size: 2rem;
+        margin: 20px 0;
     }
     .form-label {
         font-size: 1.6rem;
+    }
+    .form-item-checkbox {
+        margin-top: 20px;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+    input[type=checkbox] {
+        margin-left: 50px;
+        transform: scale(2.5);
+    }
+    .checkbox-label {
+        margin-top: 20px;
+        margin-left: 35px;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+        flex-wrap: wrap;
+        ;
+    }
+    .form-button {
+        font-size: 2.5rem;
     }
 }
