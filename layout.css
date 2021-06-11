@@ -1,5 +1,5 @@
 /*
-CIS192 - Final Project - Tribute Page: Niki Lauda
+CIS192 - Final Project - Form Page
 
 Author:         Stephen Chang
 Date:           5/31/2021
@@ -8,9 +8,16 @@ Date:           5/31/2021
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
+html {
+    background-color: #dddddd;
+}
+
 body {
     padding: 25px;
     font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 p {
@@ -32,7 +39,7 @@ h1 {
 }
 
 .form-title {
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 700;
 }
 
@@ -58,6 +65,7 @@ h1 {
 }
 
 .form-label {
+    font-size: 1.4rem;
     font-weight: 700;
     padding: 10px 0;
 }
@@ -142,4 +150,16 @@ textarea.form-input {
 
 .form-button:active {
     background: #0fa942;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-description {
+        display: none
+    }
+    .form-title {
+        font-size: 2rem;
+    }
+    .form-label {
+        font-size: 1.6rem;
+    }
 }
